@@ -13,11 +13,14 @@ public class GameEngine {
     private boolean isWin;
     
     public GameEngine(String targetWord) {
-        
+        this.target = targetWord;
+        this.attemptsLeft = 6;
+        this.isWin = false;
     }
 
     public String playGuess(String guess) {
-        return "-----";
+        String answer = evaluateGuess(this.targetWord, guess);
+        return answer;
     }
 
     public static void main(String[] args) {
@@ -67,12 +70,15 @@ public class GameEngine {
                 }
             }
         }
-        System.out.println(newS);
         return newS;
     }
 
     public boolean isGameOver() {
-        return false;
+        if(attemptsLeft == 0){
+            return true;
+        }else{
+            return false;
+        }
     }
 
     public boolean isWin() {
