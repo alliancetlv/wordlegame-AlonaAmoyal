@@ -86,6 +86,10 @@ public class GameEngine {
     }
 
     public int getAttemptsLeft() {
-        return 0;
+        return attemptsLeft;
+    }
+
+    public String getTargetWord(){
+        return this.targetWord;
     }
 }
