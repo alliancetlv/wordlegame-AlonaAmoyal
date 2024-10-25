@@ -28,7 +28,7 @@ public class GameEngine {
         String TheWord = wordLoader.getRandomWord();
         GameEngine GameEngine = new GameEngine(targetWord);
         GameUI gameUI = new GameUI();
-        int guess = 
+        String guess = GameUI.readUserGuess();
     }
 
     /**
