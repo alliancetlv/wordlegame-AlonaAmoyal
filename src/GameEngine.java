@@ -24,7 +24,11 @@ public class GameEngine {
     }
 
     public static void main(String[] args) {
-        
+        WordLoader wordLoader = new WordLoader();
+        String TheWord = wordLoader.getRandomWord();
+        GameEngine GameEngine = new GameEngine(targetWord);
+        GameUI gameUI = new GameUI();
+        int guess = 
     }
 
     /**
