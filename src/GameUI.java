@@ -5,7 +5,7 @@ public class GameUI {
     private Scanner input;
 
     public GameUI(){
-        this.input;
+        
     }
 
     public String readUserGuess(){
@@ -14,7 +14,7 @@ public class GameUI {
     }
 
    public static void displayResult(int attemptsLeft, String guess, String feedback){
-      attemptsLeft = GameEngine(attemptsLeft);
-      
+      attemptsLeft = GameEngine.getAttemptsLeft();
+      feedback = GameEngine.get
    }
 }
