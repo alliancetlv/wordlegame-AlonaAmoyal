@@ -25,10 +25,19 @@ public class GameEngine {
 
     public static void main(String[] args) {
         WordLoader wordLoader = new WordLoader();
-        String TheWord = wordLoader.getRandomWord();
+        String theWord = wordLoader.getRandomWord();
         GameEngine GameEngine = new GameEngine(targetWord);
         GameUI gameUI = new GameUI();
+        System.out.println("Enter your guess: ");
         String guess = GameUI.readUserGuess();
+        while(!GameEngine.isGameOver){
+            System.out.println("Enter your guess: ");
+            String guess = GameUI.readUserGuess();
+            evaluateGuess
+            
+            
+            System.out.println("Try again: ");
+        }
     }
 
     /**
@@ -78,7 +87,7 @@ public class GameEngine {
     }
 
     public boolean isGameOver() {
-        if(attemptsLeft == 0){
+        if(attemptsLeft <= 0 || isWin){
             return true;
         }else{
             return false;
