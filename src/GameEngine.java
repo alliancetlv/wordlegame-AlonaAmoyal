@@ -64,6 +64,7 @@ public class GameEngine {
                 }
             }
         }
+        System.out.println(newS);
         return newS;
     }
 
