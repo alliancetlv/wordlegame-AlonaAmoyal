@@ -13,7 +13,7 @@ public class GameEngine {
     private boolean isWin;
     
     public GameEngine(String targetWord) {
-        this.target = targetWord;
+        this.targetWord = targetWord;
         this.attemptsLeft = 6;
         this.isWin = false;
     }
