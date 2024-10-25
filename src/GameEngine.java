@@ -44,7 +44,7 @@ public class GameEngine {
         if(targetWord.length() <= guess.length()){
             for(int i = 0; i < targetWord.length(); i++){
                 for(int j = 0; j< guess.length(); j++){
-                    if(targetWord.length(i) == guess.length(j)){
+                    if(targetWord.charAt(i) == guess.charAt(j)){
                         if(i == j){
                             newS = newS+""+"*";
                         }else{
@@ -58,7 +58,7 @@ public class GameEngine {
         }else{
              for(int i = 0; i < guess.length(); i++){
                 for(int j = 0; j< targetWord.length(); j++){
-                    if(guess.length(i) == targetWord.length(j)){
+                    if(guess.charAt(i) == targetWord.charAt(j)){
                         if(i == j){
                             newS = newS+""+"*";
                         }else{
