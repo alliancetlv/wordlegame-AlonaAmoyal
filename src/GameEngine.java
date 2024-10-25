@@ -19,7 +19,7 @@ public class GameEngine {
     }
 
     public String playGuess(String guess) {
-        String answer = evaluateGuess(this.targetWord, guess);
+        String answer = GameEngine.evaluateGuess(targetWord, guess);
         return answer;
     }
 
@@ -33,7 +33,8 @@ public class GameEngine {
         while(!GameEngine.isGameOver){
             System.out.println("Enter your guess: ");
             String guess = GameUI.readUserGuess();
-            evaluateGuess
+            String result = GameEngine.playGuess(guess);
+            GameUI.
             
             
             System.out.println("Try again: ");
