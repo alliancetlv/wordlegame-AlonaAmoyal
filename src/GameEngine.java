@@ -8,7 +8,10 @@
 import assignmentfiles.*;
 
 public class GameEngine {
-
+    private String targetWord;
+    private int attemptsLeft;
+    private boolean isWin;
+    
     public GameEngine(String targetWord) {
         
     }
