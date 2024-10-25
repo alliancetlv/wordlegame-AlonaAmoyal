@@ -12,7 +12,15 @@ public class GameUI {
        return input;
     }
 
-   public static void displayResult(int attemptsLeft, String guess, String feedback){
-      return "You have "+attemptsLeft+" attempts left. \n Your guess: "+guess+
+   public String displayResult(int attemptsLeft, String guess, String feedback){
+      return "You have "+attemptsLeft+" attempts left. \n Your guess: "+guess "\n Feedback: "+feedback;
+   }
+
+   public String displayWin(){
+      return "Congratulations, YOU WIN!";
+   }
+
+   public String displayLoss(String targetWord){
+      return "Game over! The word was: "+targetWord;
    }
 }
