@@ -15,7 +15,7 @@ public class GameUI {
 
    public static void displayResult(int attemptsLeft, String guess, String feedback){
       attemptsLeft = GameEngine.getAttemptsLeft();
-      feedback = evaluateGuess(this.input, guess);
+      feedback = GameEngine.evaluateGuess();
       System.out.println("You have "+attemptsLeft+" attempts left.");
    }
 }
