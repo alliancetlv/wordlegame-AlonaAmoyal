@@ -5,8 +5,13 @@ public class GameUI {
     private Scanner input;
 
     public GameUI(){
-        this.input = in.next();
+        this.input = "";
     }
 
-    public 
+    public static String readUserGuess(){
+       this.input = in.next();
+       return input;
+    }
+
+   public static void displayResult()
 }
