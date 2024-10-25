@@ -49,6 +49,20 @@ public class GameEngine {
                     }
                 }
             }
+        }else{
+             for(int i = 0; i < guess.length(); i++){
+                for(int j = 0; j< targetWord.length(); j++){
+                    if(guess.length(i) == targetWord.length(j)){
+                        if(i == j){
+                            newS = newS+""+"*";
+                        }else{
+                            newS = newS+""+"+";
+                        }
+                    }else{
+                        newS = newS+""+"-";
+                    }
+                }
+            }
         }
         return newS;
     }
