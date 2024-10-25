@@ -34,7 +34,23 @@ public class GameEngine {
      * Returns: "-*+**"
      **/
     public static String evaluateGuess(String targetWord, String guess) {
-        return "-----";
+        String newS = "";
+        if(targetWord.length() <= guess.length()){
+            for(int i = 0; i < targetWord.length(); i++){
+                for(int j = 0; j< guess.length(); j++){
+                    if(targetWord.length(i) == guess.length(j)){
+                        if(i == j){
+                            newS = newS+""+"*";
+                        }else{
+                            newS = newS+""+"+";
+                        }
+                    }else{
+                        newS = newS+""+"-";
+                    }
+                }
+            }
+        }
+        return newS;
     }
 
     public boolean isGameOver() {
