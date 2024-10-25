@@ -13,5 +13,8 @@ public class GameUI {
        return input;
     }
 
-   public static void displayResult()
+   public static void displayResult(int attemptsLeft, String guess, String feedback){
+      attemptsLeft = GameEngine(attemptsLeft);
+      
+   }
 }
