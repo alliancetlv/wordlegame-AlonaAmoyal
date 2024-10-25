@@ -5,10 +5,10 @@ public class GameUI {
     private Scanner input;
 
     public GameUI(){
-        this.input = "";
+        this.input;
     }
 
-    public static String readUserGuess(){
+    public String readUserGuess(){
        this.input = in.next();
        return input;
     }
